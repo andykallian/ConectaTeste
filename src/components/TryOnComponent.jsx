@@ -8,8 +8,8 @@ const TryOnComponent = () => {
     <div className='bg-green-500 flex items-center justify-evenly sm:h-[374px] md:h-[290px] -z-10'>
 
       <div className='flex gap-5'>
-        <img src={lataGuarana} alt="" className='h-[177px] rotate-45' />
-        <img src={lataGuarana} alt=""  className='h-[343px] w-[195px] mt-28 -rotate-12'/>
+        <img src={lataGuarana} alt="" className='sm:hidden h-[177px] rotate-45' />
+        <img src={lataGuarana} alt=""  className='sm:hidden h-[343px] w-[195px] mt-28 -rotate-12'/>
       </div>
       
       <div className='flex flex-col gap-3 items-center'>

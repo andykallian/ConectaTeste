@@ -15,7 +15,7 @@ const Body = () => {
         <p className='font-vollkorn font-normal text-[16px] leading-8 sm:w-11/12 md:w-full text-center'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris semper, tortor sed vehicula.</p>
       </div>
 
-      <div className='flex sm:flex-col md:flex-row md:w-11/12 gap-24 mb-28 justify-center'>
+      <div className='flex sm:flex-col md:flex-row sm:w-full gap-24 mb-28 sm:items-center justify-center'>
         <ProductCard
           image={garrafaGuarana}
           product={'Garrafa 350ml'}

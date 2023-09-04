@@ -11,7 +11,10 @@ export default {
         'carrousel-bg': "url('../src/assets/rectangle-bg.png')",
       },
       fontFamily: {
-        'artigo': ['Artigo', 'sans']
+        'vollkorn': ['Vollkorn', 'sans'],
+        'inter': ['Inter', 'sans'],
+        'roboto': ['Roboto', 'sans'],
+
       },
       boxShadow: {
         'custom': '0 8px 24px -4px rgba(0, 0, 0, 0.25)',

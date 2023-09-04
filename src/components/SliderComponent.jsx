@@ -3,6 +3,8 @@ import React, { useState } from 'react';
 import pessoasFesta from "../assets/michael-discenza.png"
 import garcon from "../assets/ash-edmonds.png"
 
+
+
 const Slider = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const slides = [
@@ -14,17 +16,17 @@ const Slider = () => {
     {
       id: 2,
       name: '@danielmaciel 2',
-      description: '“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam commodo hendrerit.”',
+      description: '“Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam, amet praesentium.”',
     },
     {
       id: 3,
       name: '@danielmaciel 3',
-      description: '“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam commodo hendrerit.”',
+      description: '“Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, eveniet earum!”',
     },
     {
       id: 4,
       name: '@danielmaciel 4',
-      description: '“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam commodo hendrerit.”',
+      description: '“Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error, ab tempora?”',
     },
   ];
 
@@ -40,12 +42,12 @@ const Slider = () => {
     <div className="bg-carrousel-bg h-full flex flex-col items-center justify-center">
 
       <div>
-        <h2 className='font-artigo  font-normal leading-6 w-2/5 m-auto text-center text-white'>{slides[currentIndex].description}</h2>
-        <p className='font-artigo  font-normal leading-6 w-2/5 m-auto text-center mt-1 text-white'>{slides[currentIndex].name}</p>
+        <h2 className='font-vollkorn  font-normal leading-6 m-auto text-center w-[367px] text-white'>{slides[currentIndex].description}</h2>
+        <p className='font-vollkorn  font-normal leading-6 w-2/5 m-auto text-center mt-1 text-white'>{slides[currentIndex].name}</p>
       </div>
 
       <div className="flex gap-4 mt-2">
-        <button onClick={handlePrevSlide} className='font-artigo text-[18px] font-normal leading-6 text-white'>&lt;</button>
+        <button onClick={handlePrevSlide} className='font-vollkorn text-[18px] font-normal leading-6 text-white'>&lt;</button>
         <div>
           {slides.map((slide) => (
             <span
@@ -55,7 +57,7 @@ const Slider = () => {
           ))}
         </div>
 
-        <button onClick={handleNextSlide} className='font-artigo text-[18px] font-normal leading-6 text-white'>&gt;</button>
+        <button onClick={handleNextSlide} className='font-vollkorn text-[18px] font-normal leading-6 text-white'>&gt;</button>
 
       </div>
     </div>
@@ -67,7 +69,7 @@ const RightSection = () => {
     <div className="flex flex-col justify-between">
         <Slider />
         <div>
-          <img src={garcon} alt="" />
+          <img src={garcon} alt="" className='w-full' />
         </div>
     </div>
   );
@@ -76,7 +78,7 @@ const RightSection = () => {
 const LeftSection = () => {
   return (
     <div>
-      <img src={pessoasFesta} alt="" />
+      <img src={pessoasFesta} alt="" className='h-full' />
     </div>
   );
 };

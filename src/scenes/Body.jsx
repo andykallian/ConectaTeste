@@ -8,11 +8,11 @@ import SliderComponent from '../components/SliderComponent'
 
 const Body = () => {
   return (
-    <div className='w-5/6 flex flex-col items-center m-auto'>
+    <div className='w-5/6 flex flex-col items-center mx-auto'>
       
-      <div className='flex flex-col items-center'>
-        <h2 className='font-artigo font-extrabold text-[24px] leading-8'>Produtos</h2>
-        <p className='font-artigo font-normal text-[16px] leading-8 w-[458px] text-center'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris semper, tortor sed vehicula.</p>
+      <div className='flex flex-col my-[55px] items-center'>
+        <h2 className='font-vollkorn font-extrabold text-[24px] leading-8'>Produtos</h2>
+        <p className='font-vollkorn font-normal text-[16px] leading-8 w-[458px] text-center'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris semper, tortor sed vehicula.</p>
       </div>
 
       <div className='flex gap-24 mb-28'>

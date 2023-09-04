@@ -85,7 +85,7 @@ const LeftSection = () => {
 
 const SliderComponent = () => {
   return (
-    <div className="flex mb-28 h-[811px] w-[1132px]">
+    <div className="flex sm:flex-col md:flex-row mb-28 h-[811px] w-[1132px] sm:w-11/12">
       <LeftSection />
       <RightSection />
     </div>

@@ -12,7 +12,7 @@ import Button from '../components/Button';
 const Footer = () => {
   return (
     <Router>
-      <div className='bg-black h-[792px] z-10 flex'>
+      <div className='bg-black h-[792px] z-10 flex relative'>
         <div className='flex w-4/5 mx-auto justify-center flex-col gap-32'>
 
           <div className='flex justify-between items-center'>
@@ -39,7 +39,7 @@ const Footer = () => {
                   <label htmlFor='nome' className='text-green-500 font-roboto text-[14px]'>
                     Nome:
                   </label>
-                  <input type='text' id='nome' name='nome' className='border-t border-r border-b-0 border-l-0 focus:border-t focus:border-r focus:border-b-0 focus:border-l-0 rounded bg-black p-2 w-full text-white' required />
+                  <input type='text' id='nome' name='nome' placeholder='John Doe' className='border-t border-r border-b-0 border-l-0 focus:border-t focus:border-r focus:border-b-0 focus:border-l-0 rounded bg-black p-2 w-full text-white' required />
                 </div>
 
                 <div className='mb-4 flex justify-between'>
@@ -48,14 +48,14 @@ const Footer = () => {
                     <label htmlFor='telefone' className='text-white font-roboto text-[14px]'>
                       Telefone:
                     </label>
-                    <input type='tel' id='telefone' name='telefone' className='border-t border-r border-b-0 border-l-0 rounded bg-black p-2 w-full text-white' required />
+                    <input type='tel' id='telefone' name='telefone' placeholder='(21) 00000-0000' className='border-t border-r border-b-0 border-l-0 rounded bg-black p-2 w-full text-white'  required />
                   </div>
 
                   <div className='flex flex-col w-7/12'>
                     <label htmlFor='email' className='text-white font-roboto text-[14px]'>
                       Email:
                     </label>
-                    <input type='email' id='email' name='email' className='border-t border-r border-b-0 border-l-0 rounded bg-black p-2 w-full text-white' required />
+                    <input type='email' id='email' name='email' placeholder='email@email.com' className='border-t border-r border-b-0 border-l-0 rounded bg-black p-2 w-full text-white' required />
                   </div>
                 </div>
 
@@ -63,7 +63,8 @@ const Footer = () => {
                   <label htmlFor='assunto' className='text-white font-roboto text-[14px]'>
                     Assunto:
                   </label>
-                  <select id='assunto' name='assunto' className='border-t border-r border-b-0 border-l-0 rounded bg-black p-2 w-full text-white' required>
+                  <select id='assunto' name='assunto' placeholder='Selecione um Assunto' className='border-t border-r border-b-0 border-l-0 rounded bg-black p-2 w-full text-white' required>
+                    <option value='' disabled selected hidden>Selecione um Assunto</option>
                     <option value='vagas_frontend'>Vagas Frontend</option>
                     <option value='vagas_backend'>Vagas Backend</option>
                     <option value='vagas_fullstack'>Vagas Fullstack</option>

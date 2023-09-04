@@ -8,14 +8,14 @@ import SliderComponent from '../components/SliderComponent'
 
 const Body = () => {
   return (
-    <div className='w-5/6 flex flex-col items-center mx-auto'>
+    <div className='sm:w-full flex flex-col items-center'>
       
-      <div className='flex flex-col my-[55px] items-center'>
+      <div className='flex flex-col my-[55px] sm:w-[280px] md:w-[480px] items-center'>
         <h2 className='font-vollkorn font-extrabold text-[24px] leading-8'>Produtos</h2>
-        <p className='font-vollkorn font-normal text-[16px] leading-8 w-[458px] text-center'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris semper, tortor sed vehicula.</p>
+        <p className='font-vollkorn font-normal text-[16px] leading-8 sm:w-11/12 md:w-full text-center'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris semper, tortor sed vehicula.</p>
       </div>
 
-      <div className='flex gap-24 mb-28'>
+      <div className='flex sm:flex-col  md:flex-row gap-24 mb-28'>
         <ProductCard
           image={garrafaGuarana}
           product={'Garrafa 350ml'}

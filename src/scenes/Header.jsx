@@ -17,7 +17,7 @@ const Header = () => {
 
       <div className="flex flex-col items-center bg-header-background h-[745px] bg-cover bg-no-repeat bg-center">
 
-        <div className='w-4/5 sm:w-11/12'>
+        <div className='sm:w-11/12 md:w-4/5'>
 
           <div className='flex justify-between '>
             <Link to="#" className=''>

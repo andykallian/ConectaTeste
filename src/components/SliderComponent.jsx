@@ -39,7 +39,7 @@ const Slider = () => {
   };
 
   return (
-    <div className="bg-carrousel-bg h-full flex flex-col items-center justify-center">
+    <div className="bg-carrousel-bg h-full flex flex-col items-center justify-center sm:h-[288px] md:h-[408px]">
 
       <div>
         <h2 className='font-vollkorn  font-normal leading-6 m-auto text-center w-[367px] text-white'>{slides[currentIndex].description}</h2>
@@ -85,7 +85,7 @@ const LeftSection = () => {
 
 const SliderComponent = () => {
   return (
-    <div className="flex sm:flex-col md:flex-row mb-28 h-[811px] w-[1132px] sm:w-11/12">
+    <div className="flex justify-center sm:flex-col md:flex-row sm:mb-[200px] md:mb-28 lg:w-11/12 md:w-11/12 sm:w-11/12">
       <LeftSection />
       <RightSection />
     </div>

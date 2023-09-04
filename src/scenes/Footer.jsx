@@ -32,7 +32,7 @@ const Footer = () => {
 
             </div>
 
-            <div className='sm:w-11/12 md:w-4/5 lg:w-[555px] flex flex-col items-end'>
+            <div className='sm:w-11/12 md:w-4/5 lg:w-1/2 flex flex-col items-end'>
               <form action='' className='w-full'>
 
                 <div className='mb-4'>

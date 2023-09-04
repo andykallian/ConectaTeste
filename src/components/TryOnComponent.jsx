@@ -5,7 +5,7 @@ import Button from './Button'
 
 const TryOnComponent = () => {
   return (
-    <div className='bg-green-500 flex items-center justify-evenly sm:h-[374px] md:h-[290px] -z-10'>
+    <div className='bg-green-500 flex items-center justify-evenly sm:flex-col-reverse md:flex-row sm:h-[374px] md:h-[290px] -z-10 relative'>
 
       <div className='flex gap-5'>
         <img src={lataGuarana} alt="" className='sm:hidden h-[177px] rotate-45' />
@@ -20,7 +20,7 @@ const TryOnComponent = () => {
       </div>
 
       <div>
-        <img src={lataGuarana} alt=""  className='h-[503px] w-[286px] bottom rotate-12'/>
+        <img src={lataGuarana} alt=""  className='sm:h-[262px] sm:w-[149px] sm:rotate-0 h-[503px] w-[286px] bottom rotate-12'/>
       </div>
 
     </div>

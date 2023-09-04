@@ -12,12 +12,12 @@ import Button from '../components/Button';
 const Footer = () => {
   return (
     <Router>
-      <div className='bg-black h-[792px] z-10 flex relative'>
-        <div className='flex w-4/5 mx-auto justify-center flex-col gap-32'>
+      <div className='bg-black h-[792px] sm:justify-center md:justify-normal z-10 flex relative'>
+        <div className='flex w-4/5 sm:mx-0 sm:w-11/12 md:mx-auto justify-center flex-col gap-32'>
 
-          <div className='flex justify-between items-center'>
+          <div className='flex justify-between items-center sm:flex-col md:flex-row sm:gap-[40px] md:gap-0'>
 
-            <div className='flex flex-col gap-4'>
+            <div className='flex flex-col sm:items-center md:items-start gap-4'>
 
               <h2 className='text-white font-vollkorn font-bold text-[40px] leading-[52px]'>Fale Conosco.</h2>
               <div className='flex items-center gap-4'>
@@ -32,7 +32,7 @@ const Footer = () => {
 
             </div>
 
-            <div className='w-[555px] flex flex-col items-end'>
+            <div className='sm:w-11/12 md:w-[555px] flex flex-col items-end'>
               <form action='' className='w-full'>
 
                 <div className='mb-4'>
@@ -83,7 +83,7 @@ const Footer = () => {
 
           </div>
 
-          <div className='flex justify-between'>
+          <div className='flex justify-between sm:flex-col md:flex-row md:items-center sm:gap-[20px] md:gap-0'>
             <p className='font-inter text-white text-[12px] leading-[14px]'>Todos os direitos reservados © 2020 Conecta</p>
             <div className='flex items-center'>
               <p className='font-inter text-[9px] leading-[10px] text-white mr-2'>PROJETADO POR</p>

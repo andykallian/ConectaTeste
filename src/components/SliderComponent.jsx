@@ -8,22 +8,22 @@ const Slider = () => {
   const slides = [
     {
       id: 1,
-      name: '@danielmaciel1',
+      name: '@danielmaciel 1',
       description: '“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam commodo hendrerit.”',
     },
     {
       id: 2,
-      name: '@danielmaciel2',
+      name: '@danielmaciel 2',
       description: '“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam commodo hendrerit.”',
     },
     {
       id: 3,
-      name: '@danielmaciel3',
+      name: '@danielmaciel 3',
       description: '“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam commodo hendrerit.”',
     },
     {
       id: 4,
-      name: '@danielmaciel4',
+      name: '@danielmaciel 4',
       description: '“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam commodo hendrerit.”',
     },
   ];
@@ -39,18 +39,18 @@ const Slider = () => {
   return (
     <div className="bg-carrousel-bg h-full flex flex-col items-center justify-center">
 
-      <div className="slider-content">
-        <h2 className='font-artigo text-[18px] font-normal leading-6 text-white'>{slides[currentIndex].description}</h2>
-        <p className='font-artigo text-[18px] font-normal leading-6 text-white'>{slides[currentIndex].name}</p>
+      <div>
+        <h2 className='font-artigo  font-normal leading-6 w-2/5 m-auto text-center text-white'>{slides[currentIndex].description}</h2>
+        <p className='font-artigo  font-normal leading-6 w-2/5 m-auto text-center mt-1 text-white'>{slides[currentIndex].name}</p>
       </div>
 
-      <div className="slider-controls">
+      <div className="flex gap-4 mt-2">
         <button onClick={handlePrevSlide} className='font-artigo text-[18px] font-normal leading-6 text-white'>&lt;</button>
-        <div className="dots">
+        <div>
           {slides.map((slide) => (
             <span
               key={slide.id}
-              className={currentIndex === slide.id - 1 ? 'dot active' : 'dot'}
+              
             ></span>
           ))}
         </div>
@@ -75,7 +75,7 @@ const RightSection = () => {
 
 const LeftSection = () => {
   return (
-    <div className=''>
+    <div>
       <img src={pessoasFesta} alt="" />
     </div>
   );

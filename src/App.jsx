@@ -1,7 +1,7 @@
-import Header from './scenes/Header'
-
 import './App.css'
+import Header from './scenes/Header'
 import Body from './scenes/Body'
+import TryOnComponent from './components/TryOnComponent'
 
 function App() {
   
@@ -10,6 +10,7 @@ function App() {
     <>
       <Header/>
       <Body/>
+      <TryOnComponent/>
     </>
   )
 }

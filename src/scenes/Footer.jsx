@@ -13,7 +13,7 @@ const Footer = () => {
   return (
     <Router>
       <div className='bg-black h-[792px] sm:justify-center md:justify-normal z-10 flex relative'>
-        <div className='flex w-4/5 sm:mx-0 sm:w-11/12 md:mx-auto justify-center flex-col gap-22'>
+        <div className='flex w-4/5 sm:mx-0 sm:w-11/12 md:mx-auto justify-center flex-col gap-20'>
 
           <div className='flex justify-between items-center sm:flex-col md:flex-row sm:gap-[40px] md:gap-0'>
 
